@@ -27,6 +27,7 @@ header {
     height: 120px;
     padding: 0;
     overflow: hidden;
+    text-align: justify;
 }
 
 header h1 {
@@ -34,8 +35,8 @@ header h1 {
     background-color: #4aaaa5;
     float: left;
     position: absolute;
-    /* padding: 50px; */
-    height: 120px;
+    padding: 42px;
+    /* height: 120px; */
     margin: 0;
     vertical-align: middle;
 }
@@ -54,17 +55,31 @@ nav {
 nav ul li {
     float: right;
     list-style: none;
-    margin: 0;
-    padding: 35px;
+    margin: 35px;
+    padding-right: 35px;
     /* height: 120px; */
+}
+
+nav ul li:hover {
+    color: #4aaaa5;
 }
 
 nav ul li:first-child {
     padding-right: 0;
+    margin-right: 0;
+}
+
+nav ul li:nth-child(2) {
+    border-right: 1px solid #777777;
+}
+
+nav ul li:last-child {
+    border-right: 1px solid #777777;
 }
 
 nav ul li a {
     text-decoration: none;
+    text-align: center;
     font-size: 20px;
     color: #777777;
 }
@@ -74,10 +89,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;  
 }
 
+section {
+    padding-top: 2em;
+}
+
+input {
+    margin: 1em 0;
+}
+
+button {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: .5em 1em;
+}
 #mainContent {
-    /* width: 960px; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin: 1em auto; */
     clear: both;
     padding: 2em;
     border: 2px solid #ddd;
@@ -98,6 +124,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1em;
 }
 
+.fullWidth {
+    display: inline-block;
+    width: 100%;
+}
 .footer {
     background-color: #666666;
     text-align: center;
@@ -107,4 +137,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .backgroundimg {
     background: url('../images/ep_naturalwhite.png')
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.box {
+    margin: 2em 2em 1em 0;   
+}
+
+.box a {
+    text-decoration: none;
+}
+.thumbnail {
+    width: 225px;
+}
+
+.imgLabel {
+    color: white;
+    background-color: #4aaaa5;
+    margin-top: -70px;
+    padding: .70em;
+    text-align: center;
+    display: block;
+    position: relative;
 }
